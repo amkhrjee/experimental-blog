@@ -4,6 +4,7 @@ import React from "react";
 import theme from "../theme";
 import About from "./About";
 import BlogSection from "./BlogSection";
+import ProjectSection from "./ProjectsSection";
 
 const BodyContainer = () => {
   return (
@@ -11,9 +12,12 @@ const BodyContainer = () => {
       <Center flex="1" w="100px" bg="green.500">
         <About />
       </Center>
-      <Center flex="2" bg="blue.500" size="150px">
+      <Box flex="1" bg="blue.500" size="150px">
         <BlogSection />
-      </Center>
+      </Box>
+      <Box flex="1" bg="red.500" size="150px">
+        <ProjectSection />
+      </Box>
     </Flex>
   );
 };

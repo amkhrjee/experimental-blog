@@ -1,4 +1,4 @@
-import { Box, Center, HStack, VStack } from "@chakra-ui/layout";
+import { Box, Center, Container, HStack, VStack } from "@chakra-ui/layout";
 import { Text } from "@chakra-ui/react";
 import React from "react";
 import theme from "../theme";
@@ -11,11 +11,13 @@ const About = () => {
     <>
       <Center p="8">
         <VStack>
-          <Image
-            className={imageCSS.image}
-            src={profile}
-            alt="my memoji profile picture"
-          />
+          <Container boxSize="sm">
+            <Image
+              className={imageCSS.image}
+              src={profile}
+              alt="my memoji profile picture"
+            />
+          </Container>
 
           <Text fontWeight="extrabold">aniruddh mukherjee</Text>
           <HStack>{/* todo */}</HStack>
@@ -28,8 +30,6 @@ const About = () => {
             sometimes building their frontend. The work varies from contract to
             contract.
           </Text>
-          <Text>Right now I'm building prysm as a solo-dev.</Text>
-          <Text>Learn more about prysm!</Text>
         </VStack>
       </Center>
     </>
